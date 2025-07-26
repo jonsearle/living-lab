@@ -54,6 +54,7 @@ p {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: -1px; /* Ensures no gap with the section below */
 }
 
 .hero-background {
@@ -86,18 +87,18 @@ p {
 .natural-support {
     padding: 60px 0;
     text-align: center;
-    background-color: #f8f6f2;
+    background-color: #647858;
+    margin-top: -2px; /* Eliminates any gap between hero and natural support sections */
 }
 
 .natural-support h1 {
-    color: #333;
+    color: #FFF;
     margin-bottom: 2rem;
 }
 
 .natural-support p {
     max-width: 800px;
-    margin: 0 auto;
-    color: #666;
+    color: #ffffff;
     font-size: 1.2rem;
 }
 
