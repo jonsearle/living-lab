@@ -1,0 +1,352 @@
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/images/Background image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: 1;
+}
+
+.logo-container {
+    position: relative;
+    z-index: 2;
+    margin-top: 1vh;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Natural Support Section */
+.natural-support {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f8f6f2;
+}
+
+.natural-support h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.natural-support p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Our Blends Section */
+.our-blends {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.our-blends h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.blends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blend-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.01rem 1rem;
+}
+
+.blend-icon {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.01rem;
+}
+
+.blend-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.blend-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.blend-ingredients {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+    background-color: #5C4A4A;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #4A3A3A;
+}
+
+/* Our Philosophy Section */
+.our-philosophy {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f8f6f2;
+}
+
+.our-philosophy h2 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.our-philosophy p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.contact-btn {
+    background-color: #5C4A4A;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #4A3A3A;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .hero {
+        height: 50vh;
+        min-height: 300px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .natural-support,
+    .our-blends,
+    .our-philosophy,
+    .contact {
+        padding: 60px 0;
+    }
+
+    .blends-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .blend-icon {
+        width: 200px;
+        height: 200px;
+    }
+
+    .blend-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .natural-support p,
+    .our-philosophy p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        height: 40vh;
+        min-height: 250px;
+    }
+
+    .logo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .natural-support,
+    .our-blends,
+    .our-philosophy,
+    .contact {
+        padding: 40px 0;
+    }
+
+    .blend-icon {
+        width: 160px;
+        height: 160px;
+    }
+
+    .blend-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .learn-more-btn,
+    .contact-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus states for accessibility */
+button:focus,
+a:focus {
+    outline: 2px solid #5C4A4A;
+    outline-offset: 2px;
+} 
+
+/* Footer */
+
+.site-footer {
+    background-color: #f8f8f8;
+    color: #666;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .site-footer p {
+    margin: 0;
+  }
+  
