@@ -25,7 +25,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
 }
 
@@ -84,7 +84,7 @@ p {
 
 /* Natural Support Section */
 .natural-support {
-    padding: 80px 0;
+    padding: 60px 0;
     text-align: center;
     background-color: #f8f6f2;
 }
@@ -110,7 +110,7 @@ p {
 
 .our-blends h2 {
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .blends-grid {
@@ -125,22 +125,28 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.01rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .blend-icon {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.01rem;
+    margin-bottom: 1rem;
 }
 
 .blend-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.blend-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
 
@@ -157,7 +163,7 @@ p {
 }
 
 .learn-more-btn {
-    background-color: #5C4A4A;
+    background-color: #342727;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -209,12 +215,12 @@ p {
 }
 
 .contact-btn {
-    background-color: #5C4A4A;
+    background-color: #342727;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 12px 24px;
     border-radius: 25px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -265,8 +271,8 @@ p {
     }
 
     .blend-icon {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     .blend-icon img {
@@ -307,8 +313,8 @@ p {
     }
 
     .blend-icon {
-        width: 160px;
-        height: 160px;
+        width: 400px;
+        height: 400px;
     }
 
     .blend-icon img {
@@ -338,15 +344,13 @@ a:focus {
 /* Footer */
 
 .site-footer {
-    background-color: #f8f8f8;
-    color: #666;
+    background-color: #5c5c5c;
+    color: #fff; /* or #000 for black */
     text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-    border-top: 1px solid #e0e0e0;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.1rem;
   }
   
   .site-footer p {
     margin: 0;
   }
-  
