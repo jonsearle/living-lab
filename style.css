@@ -41,7 +41,7 @@ h3 {
 
 p {
     font-size: 1.1rem;
-    line-height: 1.7;
+    line-height: 1.5;
     margin-bottom: 1rem;
 }
 
@@ -77,8 +77,8 @@ p {
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 275px;
+    height: 275px;
     object-fit: contain;
 }
 
@@ -129,8 +129,8 @@ p {
 }
 
 .blend-icon {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,13 +153,13 @@ p {
 .blend-description {
     font-size: 1rem;
     color: #666;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.05rem;
 }
 
 .blend-ingredients {
     font-size: 0.9rem;
     color: #888;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
 }
 
 .learn-more-btn {
@@ -301,8 +301,8 @@ p {
     }
 
     .logo {
-        width: 160px;
-        height: 160px;
+        width: 275px;
+        height: 275px;
     }
 
     .natural-support,
@@ -313,8 +313,8 @@ p {
     }
 
     .blend-icon {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
 
     .blend-icon img {
@@ -344,13 +344,12 @@ a:focus {
 /* Footer */
 
 .site-footer {
-    background-color: #5c5c5c;
+    background-color: #616161;
     color: #fff; /* or #000 for black */
     text-align: center;
     padding: 0.5rem 0.5rem;
-    font-size: 0.1rem;
   }
   
-  .site-footer p {
-    margin: 0;
+  .site-footer * {
+    font-size: 10px;
   }
